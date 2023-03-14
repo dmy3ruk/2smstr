@@ -11,7 +11,7 @@ app.get('/about', function(req,res){
  res.send('<div><p>Alina Dmytruk</p> <p>Age: 17</p> <p>University: King Danylo University</p> <p>Major: Software ingineering</p> <p>Group: ІПЗс-22-1</p></div>')
   });
    app.listen(port, function(){
-    console.log('running')
+   console.log('running')
 })
   app.use((err, req, res,next)=>{
     console.log(err);

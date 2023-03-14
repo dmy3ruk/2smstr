@@ -8,7 +8,7 @@ const server = http.createServer(function (req, res){
             res.writeHead(500, {'Content-Type': 'text/html'}); 
             res.write('error');            
             res.end(); 
-        } else {            
+         } else {            
             res.writeHead(200,{ 'Content-Type':'text/html'  });            
             res.write(data);            
             res.end();      
