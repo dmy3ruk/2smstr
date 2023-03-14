@@ -11,7 +11,7 @@ const server = http.createServer(function (req, res){
         } else {            
             res.writeHead(200,{ 'Content-Type':'text/html'  });            
             res.write(data);            
-            res.end();       
+            res.end();      
           }    
          }); 
         }); 

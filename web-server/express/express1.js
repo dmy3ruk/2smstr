@@ -4,7 +4,6 @@ const hostname = 'localhost';
 const port = 8000;
 const app = express();
 
-
 app.get('/', function(req,res){
     res.send('Hello');
 });

@@ -7,7 +7,7 @@ const app = express();
  app.use(express.static('public'));
 app.get('/', function(req,res){
     res.send('Hello');
-});
+}); 
 app.get('/about', function(req,res){
   fs.readFile('./student.html', (err, data)=>{
     if(err){
