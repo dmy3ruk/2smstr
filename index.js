@@ -3,7 +3,7 @@ const { Pool } = require('pg');
 const app = express();
 const port = 3000;
 
-// Create a connection pool to the PostgreSQL database
+// створити з'днання  pool до PostgreSQL database
 const pool = new Pool({
   user: 'ukd_admin',
   host: 'ep-square-mouse-262994.us-west-2.aws.neon.tech',
@@ -12,7 +12,7 @@ const pool = new Pool({
   port: 5432,
 });
 
-// Add a new student to the students table
+// додати нового студента
 app.post('/students', async (req, res) => {
   try {
     const { name, age } = req.body;
@@ -26,7 +26,8 @@ app.post('/students', async (req, res) => {
   }
 });
 
-// Add a new task to the tasks table with a reference to a student and subject
+//Додати нове завдання до таблиці tasks з посиланням на студента та предмет
+
 app.post('/tasks', async (req, res) => {
   try {
     const { studentId, subjectId, task } = req.body;
@@ -39,8 +40,7 @@ app.post('/tasks', async (req, res) => {
     res.status(500).send('Error adding task');
   }
 });
-
-// Get a list of students with their associated tasks
+// Отримати список студентів з їх завданнями
 app.get('/students', async (req, res) => {
   try {
     const client = await pool.connect();
@@ -59,7 +59,7 @@ app.get('/students', async (req, res) => {
   }
 });
 
-
+// Отримати предмет за ID з асоційованими завданнями
 app.get('/subjects/:id', async (req, res) => {
   try {
     const { id } = req.params;
