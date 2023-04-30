@@ -1,0 +1,22 @@
+{
+  "name": "mongo",
+  "version": "1.0.0",
+  "description": "mongo",
+  "main": "main.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "2smstr"
+  },
+  "keywords": [
+    "mongo"
+  ],
+  "author": "alina",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^5.3.0",
+    "zlib": "^1.0.5"
+  }
+}
