@@ -5,7 +5,6 @@ function findCarNumberPlate(codeWord, digitString) {
       }
       const codeWordCodes = Array.from(codeWord).map(char => char.charCodeAt(0));
       const digits = codeWordCodes.map(code => digitString.charAt(code));
-  
       return digits.join('').slice(0, 4);
     } catch (error) {
       console.error(error);
