@@ -9,7 +9,7 @@ app.get('/', function(req,res){
     res.send('Hello');
 }); 
 app.get('/about', function(req,res){
-  fs.readFile('./student.html', (err, data)=>{
+  fs.readFile('/public/student.html', 'utf-8', (err, data)=>{
     if(err){
       res.writeHead(500, {'Content-Type':'text/html'})
       res.write('error');

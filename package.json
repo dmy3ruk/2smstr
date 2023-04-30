@@ -1,7 +1,13 @@
 {
   "dependencies": {
+    "bd": "^0.4.1",
     "crypto": "^1.0.1",
     "csv-parser": "^3.0.0",
-    "csv-writer": "^1.6.0"
+    "csv-writer": "^1.6.0",
+    "express": "^4.18.2",
+    "jest": "^29.5.0",
+    "mongodb": "^5.3.0",
+    "pg": "^8.10.0",
+    "save-dev": "^0.0.1-security"
   }
 }
