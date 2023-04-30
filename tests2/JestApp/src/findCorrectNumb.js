@@ -1,4 +1,4 @@
-function findCarNumberPlate(codeWord, digitString) {
+function findCarNumberPlate(codeWord, digitString){
     try {
       if (typeof codeWord !== 'string' || typeof digitString !== 'string') {
         throw new TypeError('Both arguments must be strings');

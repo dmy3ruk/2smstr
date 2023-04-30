@@ -5,6 +5,7 @@ describe('find correct Number', () => {
       const digitString = 12345;
       expect(findCarNumberPlate(codeWord, digitString)).toEqual('');
     });
+    
     it('should return an empty string if the codeWord is empty', () => {
       const codeWord = '';
       const digitString = '123456789';
